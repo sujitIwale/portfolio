@@ -1,4 +1,6 @@
 .header {
+  position: sticky;
+  top: var(--top-bottom-space);
   display: flex;
   justify-content: space-between;
   align-items: center;

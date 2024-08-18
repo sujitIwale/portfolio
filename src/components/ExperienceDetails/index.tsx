@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./ExperienceDetails.module.css";
+import Chip from "../common/Chip";
 
 interface ExperienceDetailsProps {
   organization: string;
@@ -27,6 +28,11 @@ const ExperienceDetails = ({
           in, maiores repellat id, quaerat aperiam. Adipisci ipsum iure cumque
           perspiciatis.
         </p>
+        <div className={styles.skills}>
+          <Chip>React</Chip>
+          <Chip>Redux</Chip>
+          <Chip>Typescript</Chip>
+        </div>
       </div>
     </div>
   );

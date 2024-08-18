@@ -30,3 +30,9 @@
 .experience-details p {
   font-size: 0.8rem;
 }
+
+.skills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
