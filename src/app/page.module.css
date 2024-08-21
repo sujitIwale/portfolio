@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 3rem;
   padding: 4rem 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .intro-section {
@@ -41,4 +43,19 @@
   object-fit: cover;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
+}
+
+.projects-section {
+  width: 100%;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
 }

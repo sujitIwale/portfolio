@@ -29,9 +29,9 @@ const ExperienceDetails = ({
           perspiciatis.
         </p>
         <div className={styles.skills}>
-          <Chip>React</Chip>
-          <Chip>Redux</Chip>
-          <Chip>Typescript</Chip>
+          <Chip label="React" />
+          <Chip label="Next.js" />
+          <Chip label="Tailwind CSS" />
         </div>
       </div>
     </div>

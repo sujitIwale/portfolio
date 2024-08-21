@@ -1,4 +1,5 @@
 :root {
+  --header-height: 50px;
   --line: rgba(0, 0, 0, 0.1);
   --grid-size: 50px;
   --max-width: 1100px;
@@ -13,8 +14,14 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --color-primary: #0141ff;
-  --color-primary-dark: #0026b3;
+  --color-white: #ffffff;
+  --color-primary: #9d4edd;
+  --color-primary-dark: #7b2cbf;
+  --color-secondary: #495057;
+  --color-secondary-dark: #343a40;
+
+  --color-text-primary: #495057;
+  --color-text-secondary: #6c757d;
 
   --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
   --secondary-glow: radial-gradient(
@@ -83,11 +90,30 @@
 body {
   height: 100vh;
   width: 100%;
-  max-width: 1000px;
-  margin: var(--top-bottom-space) auto;
-  background-image: linear-gradient(to right, var(--line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  position: relative;
   background-size: var(--grid-size) var(--grid-size);
+}
+
+body::before {
+  --size: 60px;
+  --line: hsl(0 0% 0% / 0.15);
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(
+        90deg,
+        var(--line) 1px,
+        transparent 1px var(--size)
+      )
+      50% 50% / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+      var(--size) var(--size);
+  mask: linear-gradient(-15deg, transparent 30%, white);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  z-index: -1;
 }
 
 a {
@@ -99,16 +125,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-column {
-  flex-direction: column;
 }

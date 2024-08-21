@@ -1,14 +1,14 @@
 import styles from "./Chip.module.css";
 
 interface ChipProps {
-  children: React.ReactNode;
+  label: string;
   color?: string;
 }
 
-const Chip = ({ children, color }: ChipProps) => {
+const Chip = ({ label, color }: ChipProps) => {
   return (
     <span className={styles["chip"]} style={{ backgroundColor: color }}>
-      {children}
+      {label}
     </span>
   );
 };
