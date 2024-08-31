@@ -1,13 +1,14 @@
 .title-card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(200, 200, 200, 0.8);
+  background-color: var(--color-card-background);
+  box-shadow: var(--card-box-shadow);
+  /* border: 1px solid rgba(200, 200, 200, 0.8); */
   border-radius: 5px;
 }
 
 .title-container {
-  border-bottom: 1px solid rgba(200, 200, 200, 0.8);
+  /* border-bottom: 1px solid rgba(200, 200, 200, 0.8); */
   width: 100%;
   padding: 1rem;
 }

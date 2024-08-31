@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/Header";
+import "../styles/globals.css";
+import "../styles/common.css";
 
 const inter = Noto_Sans({ subsets: ["latin"] });
 

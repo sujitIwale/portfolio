@@ -1,0 +1,116 @@
+:root {
+  --header-height: 50px;
+  --grid-size: 50px;
+  --max-width: 1100px;
+  --box-shadow: 0px 8px 7px 0px rgba(64, 60, 67, 0.24);
+  --card-box-shadow: oklab(0.560344 -0.00759451 -0.0144049 / 0.38725) 0px 0px
+      0px 1px inset,
+    color(display-p3 0 0 0 / 0.15) 0px 8px 40px 0px,
+    color(display-p3 0 0 0 / 0.3) 0px 12px 32px -16px;
+  --top-bottom-space: 20px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  /* Light Colors */
+  --grid-line-color: hsl(0 0% 0% / 0.15);
+  --background-color: #f8f9fa;
+
+  --color-white: #ffffff;
+  --color-primary: #9d4edd;
+  --color-primary-dark: #7b2cbf;
+  --color-secondary: #495057;
+  --color-secondary-dark: #343a40;
+
+  --color-text-primary: #495057;
+  --color-text-secondary: #6c757d;
+
+  --color-card-background: #fffc;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --grid-line-color: rgb(255, 255, 255, 0.15);
+    --background-color: #1d1d1d;
+
+    --color-text-primary: #f8f9fa;
+    --color-text-secondary: #ced4da;
+
+    --color-card-background: #1b1d1eb3;
+  }
+} */
+
+[data-theme="dark"] {
+  --grid-line-color: rgb(255, 255, 255, 0.15);
+  --background-color: #1d1d1d;
+
+  --color-text-primary: #f8f9fa;
+  --color-text-secondary: #ced4da;
+
+  --color-card-background: #1b1d1eb3;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--background-color);
+  background-size: var(--grid-size) var(--grid-size);
+  color: var(--color-text-primary);
+}
+
+body::before {
+  --size: var(--grid-size);
+  --line-color: var(--grid-line-color);
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(
+        90deg,
+        var(--line-color) 1px,
+        transparent 1px var(--size)
+      )
+      50% 50% / var(--size) var(--size),
+    linear-gradient(var(--line-color) 1px, transparent 1px var(--size)) 50% 50% /
+      var(--size) var(--size);
+  mask: linear-gradient(-15deg, transparent 30%, white);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* body::before {
+  --size: var(--grid-size);
+  --line: var(--grid-line-color);
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(
+        90deg,
+        var(--line) 1px,
+        transparent 1px var(--size)
+      )
+      50% 50% / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+      var(--size) var(--size);
+  mask: linear-gradient(-15deg, transparent 30%, white);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  z-index: -1;
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,25 +1,30 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import "../css/common.css";
 import TitleCard from "@/components/common/TitleCard";
 import ExperienceDetails from "@/components/ExperienceDetails";
 import ProjectCard from "@/components/ProjectCard";
+import Typography from "@/components/common/Typography";
 
 export default function Home() {
   return (
     <main className={styles["page-container"]}>
       <section className={styles["intro-section"]}>
-        <div className={styles["info"]}>
-          <h1>Hello I am Sujit Iwale</h1>
-          <p>Something is this hello from working.</p>
-          <div className={styles["action-buttons"]}>
-            <button className="button primary-button">Contact Me</button>
-            <button className="button secondary-button">View Blog</button>
-          </div>
+        {/* <div className={styles["info"]}> */}
+        <Typography variant="h1">Hello I am Sujit Iwale</Typography>
+        <Typography variant="body1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat
+          facere hic nulla deleniti a culpa aliquid sint delectus voluptatibus,
+          cumque exercitationem at repudiandae quidem ullam explicabo. Saepe,
+          cupiditate ullam.
+        </Typography>
+        <div className={styles["action-buttons"]}>
+          <button className="button primary-button">Contact Me</button>
+          <button className="button secondary-button">View Blog</button>
         </div>
-        <div className={styles["hero-right-part"]}>
+        {/* </div> */}
+        {/* <div className={styles["hero-right-part"]}>
           <Image src="/temp.png" alt="Profile" width={600} height={400} />
-        </div>
+        </div> */}
       </section>
       <section className={styles["experience-section"]}>
         <TitleCard title="Experience">

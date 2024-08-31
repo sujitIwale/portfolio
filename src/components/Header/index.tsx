@@ -1,6 +1,7 @@
 import Link from "next/link";
 import IconButton from "../common/IconButton";
 import styles from "./Header.module.css";
+import ThemeSwitch from "../common/ThemeSwitch";
 
 const Header = () => {
   return (
@@ -14,12 +15,13 @@ const Header = () => {
             <Link href="/">Education</Link>
           </div>
           <div className={styles["buttons-group"]}>
-            <IconButton>
+            {/* <IconButton>
               <i className="fa-brands fa-github"></i>
             </IconButton>
             <IconButton>
               <i className="fa-brands fa-linkedin"></i>
-            </IconButton>
+            </IconButton> */}
+            <ThemeSwitch />
           </div>
         </nav>
       </div>
