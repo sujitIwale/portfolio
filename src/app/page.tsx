@@ -9,6 +9,11 @@ export default function Home() {
   return (
     <main className={styles["page-container"]}>
       <section className={styles["intro-section"]}>
+        <div className={styles["light-container"]}>
+          <div className={styles["bg-light"]}>
+            <div className={styles["light-element"]}></div>
+          </div>
+        </div>
         {/* <div className={styles["info"]}> */}
         <Typography variant="h1">Hello I am Sujit Iwale</Typography>
         <Typography variant="body1">
