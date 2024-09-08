@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Figtree } from "next/font/google";
 import Header from "@/components/Header";
 import "../styles/globals.css";
 import "../styles/common.css";
 
-const inter = Noto_Sans({ subsets: ["latin"] });
+const figtree = Figtree({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-figtree",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,7 +31,7 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
       </head>
-      <body className={inter.className}>
+      <body className={figtree.className}>
         <Header />
         {children}
       </body>
