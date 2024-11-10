@@ -19,7 +19,7 @@
   --color-white: #ffffff;
   --color-primary: #9d4edd;
   --color-primary-dark: #7b2cbf;
-  --color-secondary: #495057;
+  --color-secondary: #4c5055;
   --color-secondary-dark: #343a40;
 
   --color-text-primary: #495057;
@@ -66,7 +66,7 @@ body {
   font-family: var(--font-figtree);
 }
 
-body::before {
+/* body::before {
   --size: var(--grid-size);
   --line-color: var(--grid-line-color);
   content: "";
@@ -86,7 +86,7 @@ body::before {
   transform-style: flat;
   pointer-events: none;
   z-index: -1;
-}
+} */
 
 /* body::before {
   --size: var(--grid-size);

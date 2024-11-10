@@ -89,3 +89,54 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
+
+.experience-section {
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: var(--color-secondary);
+}
+
+.item-container {
+  display: flex;
+  position: relative;
+  text-align: right;
+}
+
+.item-container:nth-child(2n) {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.item {
+  width: 45%;
+}
+
+.item-indicator::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid var(--color-secondary);
+  background-color: inherit;
+}

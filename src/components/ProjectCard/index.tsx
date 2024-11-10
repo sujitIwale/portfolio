@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./ProjectCard.module.css";
 import Chip from "../common/Chip";
 import Typography from "../common/Typography";
+import Button from "../common/Button";
 
 const ProjectCard = () => {
   return (
@@ -26,8 +27,12 @@ const ProjectCard = () => {
           </div>
         </div>
         <div className={styles["buttons"]}>
-          <button className="button primary-button">View Project</button>
-          <button className="button secondary-button">View Code</button>
+          <Button variant="contained" color="primary">
+            View Project
+          </Button>
+          <Button variant="outlined" color="secondary">
+            View Code
+          </Button>
         </div>
       </div>
     </div>

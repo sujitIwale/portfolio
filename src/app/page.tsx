@@ -3,14 +3,15 @@ import styles from "./page.module.css";
 import TitleCard from "@/components/common/TitleCard";
 import ExperienceDetails from "@/components/ExperienceDetails";
 import ProjectCard from "@/components/ProjectCard";
-import Typography from "@/components/common/Typography";
 import HeroSection from "./HeroSection";
+import ExperienceSection from "./ExperienceSection";
 
 export default function Home() {
   return (
     <main className={styles["page-container"]}>
       <HeroSection />
-      <section className={styles["experience-section"]}>
+      <ExperienceSection />
+      {/* <section className={styles["experience-section"]}>
         <TitleCard title="Experience">
           <ExperienceDetails
             logo="https://www.smallcase.com/static/svgs/logo-mark.svg"
@@ -23,8 +24,8 @@ export default function Home() {
             role="Software Engineer Frontend"
           />
         </TitleCard>
-      </section>
-      <section className={styles["projects-section"]}>
+      </section> */}
+      <section className={styles["projects-section"]} id="projects">
         <h2>Projects</h2>
         <div className={styles["projects-list"]}>
           <ProjectCard />

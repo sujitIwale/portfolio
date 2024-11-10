@@ -1,5 +1,4 @@
 import Link from "next/link";
-import IconButton from "../common/IconButton";
 import styles from "./Header.module.css";
 import ThemeSwitch from "../common/ThemeSwitch";
 
@@ -7,10 +6,12 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles["content"]}>
-        <h1 className={styles.title}>SUJIT IWALE</h1>
+        <Link href="/">
+          <h1 className={styles.title}>SUJIT IWALE</h1>
+        </Link>
         <nav className={styles["navbar"]}>
           <div className={styles["links-container"]}>
-            <Link href="/">Projects</Link>
+            <Link href="#projects">Projects</Link>
             <Link href="/">Experience</Link>
             <Link href="/">Education</Link>
           </div>
