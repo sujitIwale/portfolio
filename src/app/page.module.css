@@ -60,6 +60,7 @@
 .action-buttons {
   display: flex;
   gap: 16px;
+  margin-bottom: 40px;
 }
 
 .hero-right-part {

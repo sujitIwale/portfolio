@@ -1,0 +1,21 @@
+.command {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hostname {
+  color: #f1891b;
+}
+
+.directory {
+  color: #81fa6e;
+}
+
+.command-text {
+  color: #a570ff;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

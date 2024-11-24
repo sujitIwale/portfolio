@@ -1,6 +1,7 @@
 import Typography from "@/components/common/Typography";
 import styles from "./page.module.css";
 import Button from "@/components/common/Button";
+import Terminal from "@/components/Terminal";
 
 const HeroSection = () => {
   return (
@@ -25,6 +26,7 @@ const HeroSection = () => {
           View Blog
         </Button>
       </div>
+      <Terminal />
     </section>
   );
 };
