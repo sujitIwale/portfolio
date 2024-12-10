@@ -9,7 +9,7 @@ const ProjectCard = () => {
     <div className={styles["project-card"]}>
       <div className={styles["image-container"]}>
         <Image
-          src="/temp.png"
+          src="/sharesheet.png"
           alt="project"
           className={styles["project-image"]}
           width={600}
@@ -19,7 +19,12 @@ const ProjectCard = () => {
       <div className={styles["content"]}>
         <div className={styles.details}>
           <Typography variant="h3">Project Name</Typography>
-          <Typography variant="body1">Project Description</Typography>
+          <Typography variant="body2" className="text-secondary">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam,
+            tenetur accusantium debitis ratione molestiae nulla quia iure iste
+            in sequi earum omnis deserunt, laudantium asperiores. Excepturi
+            consectetur quo dignissimos maxime?
+          </Typography>
           <div className={styles["tech-stack"]}>
             <Chip label="React" />
             <Chip label="Next.js" />
@@ -27,10 +32,10 @@ const ProjectCard = () => {
           </div>
         </div>
         <div className={styles["buttons"]}>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="primary" size="small">
             View Project
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="outlined" color="secondary" size="small">
             View Code
           </Button>
         </div>

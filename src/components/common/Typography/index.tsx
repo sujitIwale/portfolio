@@ -72,6 +72,10 @@ const Typography = ({
       element = "p";
       className = styles.body1;
       break;
+    case "body2":
+      element = "p";
+      className = styles.body2;
+      break;
     case "span":
       element = "span";
       className = styles.span;

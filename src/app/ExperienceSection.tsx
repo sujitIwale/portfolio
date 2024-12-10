@@ -1,10 +1,13 @@
 import ExperienceDetails from "@/components/ExperienceDetails";
 import styles from "./page.module.css";
+import { experience } from "@/data/data";
+import Timeline from "@/components/timeline";
+import { TimelineItem } from "@/components/timeline/TimelineItem";
 
 const ExperienceSection = () => {
   return (
     <section className={styles["experience-section"]}>
-      <div className={styles["timeline-container"]}>
+      {/* <div className={styles["timeline-container"]}>
         <div className={styles["item-container"]}>
           <div className={styles["item-indicator"]}></div>
           <div className={styles["item"]}>
@@ -35,7 +38,17 @@ const ExperienceSection = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+      <Timeline>
+        {experience.map((item, index) => (
+          <TimelineItem
+            key={index}
+            {...item}
+            index={index}
+            isLatest={index === 0}
+          />
+        ))}
+      </Timeline>
     </section>
   );
 };

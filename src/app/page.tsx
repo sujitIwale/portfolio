@@ -5,11 +5,15 @@ import ExperienceDetails from "@/components/ExperienceDetails";
 import ProjectCard from "@/components/ProjectCard";
 import HeroSection from "./HeroSection";
 import ExperienceSection from "./ExperienceSection";
+import Typography from "@/components/common/Typography";
+import projects from "@/data/projects";
+import Skills from "@/components/sections/Skills/Skills";
 
 export default function Home() {
   return (
     <main className={styles["page-container"]}>
       <HeroSection />
+      <Skills />
       <ExperienceSection />
       {/* <section className={styles["experience-section"]}>
         <TitleCard title="Experience">
@@ -26,12 +30,11 @@ export default function Home() {
         </TitleCard>
       </section> */}
       <section className={styles["projects-section"]} id="projects">
-        <h2>Projects</h2>
+        <Typography variant="h2">My Projects</Typography>
         <div className={styles["projects-list"]}>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map((project) => (
+            <ProjectCard key={project.id} />
+          ))}
         </div>
       </section>
     </main>
