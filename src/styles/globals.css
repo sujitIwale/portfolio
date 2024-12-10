@@ -1,54 +1,5 @@
-:root {
-  --header-height: 50px;
-  --grid-size: 50px;
-  --max-width: 1100px;
-  --box-shadow: 0px 8px 7px 0px rgba(64, 60, 67, 0.24);
-  --card-box-shadow: oklab(0.560344 -0.00759451 -0.0144049 / 0.38725) 0px 0px
-      0px 1px inset,
-    color(display-p3 0 0 0 / 0.15) 0px 8px 40px 0px,
-    color(display-p3 0 0 0 / 0.3) 0px 12px 32px -16px;
-  --top-bottom-space: 20px;
-  --border-radius: 12px;
-  --font-figtree: "Figtree", -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-
-  /* Light Colors */
-  --grid-line-color: hsl(0 0% 0% / 0.15);
-  --background-color: #f8f9fa;
-
-  --color-white: #ffffff;
-  --color-primary: #9d4edd;
-  --color-primary-dark: #7b2cbf;
-  --color-secondary: #4c5055;
-  --color-secondary-dark: #343a40;
-
-  --color-text-primary: #495057;
-  --color-text-secondary: #6c757d;
-
-  --color-card-background: #fffc;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --grid-line-color: rgb(255, 255, 255, 0.15);
-    --background-color: #1d1d1d;
-
-    --color-text-primary: #f8f9fa;
-    --color-text-secondary: #ced4da;
-
-    --color-card-background: #1b1d1eb3;
-  }
-} */
-
-[data-theme="dark"] {
-  --grid-line-color: rgb(255, 255, 255, 0.15);
-  --background-color: #1d1d1d;
-
-  --color-text-primary: #f8f9fa;
-  --color-text-secondary: #ced4da;
-
-  --color-card-background: #1b1d1eb3;
-}
+@import "colors.css";
+@import "spacing.css";
 
 * {
   box-sizing: border-box;
