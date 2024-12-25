@@ -1,5 +1,6 @@
 @import "colors.css";
 @import "spacing.css";
+@import "variables.css";
 
 * {
   box-sizing: border-box;
@@ -13,7 +14,7 @@ body {
   position: relative;
   background-color: var(--background-color);
   background-size: var(--grid-size) var(--grid-size);
-  color: var(--color-text-primary);
+  color: var(--text-primary);
   font-family: var(--font-figtree);
 }
 

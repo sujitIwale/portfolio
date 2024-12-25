@@ -18,14 +18,12 @@
 .timeline-header h2 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #1f2937;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .timeline-header p {
   font-size: 1.125rem;
-  color: #4b5563;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -94,7 +92,7 @@
 .timeline-content {
   max-width: 1200px;
   position: relative;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--paper-color);
   backdrop-filter: blur(8px);
   border-radius: 1rem;
   padding: 2rem;
@@ -117,7 +115,6 @@
 }
 
 .timeline-meta i {
-  color: #3b82f6;
   width: 1.25rem;
   text-align: center;
 }
@@ -125,12 +122,10 @@
 .timeline-role {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
   margin-bottom: 1rem;
 }
 
 .timeline-description {
-  color: #4b5563;
   line-height: 1.6;
 }
 
@@ -139,7 +134,7 @@
   top: -0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  background: #3b82f6;
+  background: var(--secondary-color);
   color: white;
   padding: 0.35rem 1.5rem;
   border-radius: 1rem;
@@ -153,12 +148,10 @@
 
 /* Latest item styles */
 .latest-item .timeline-content {
-  border: 2px solid #3b82f6;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  border: 2px solid var(--primary-color);
 }
 
 .latest-item .year-badge {
-  background: #2563eb;
   font-weight: 700;
 }
 

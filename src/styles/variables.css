@@ -1,0 +1,14 @@
+:root {
+  --header-height: 50px;
+  --grid-size: 50px;
+  --max-width: 50rem;
+  --box-shadow: 0px 8px 7px 0px rgba(64, 60, 67, 0.24);
+  --card-box-shadow: oklab(0.560344 -0.00759451 -0.0144049 / 0.38725) 0px 0px
+      0px 1px inset,
+    color(display-p3 0 0 0 / 0.15) 0px 8px 40px 0px,
+    color(display-p3 0 0 0 / 0.3) 0px 12px 32px -16px;
+  --top-bottom-space: 20px;
+  --border-radius: 12px;
+  --font-figtree: "Figtree", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Typography.module.css";
+import { classNames } from "@/utils/styles";
 
 interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
@@ -22,6 +23,7 @@ interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
     | "subtitle2"
     | "body1"
     | "body2";
+  color?: "primary" | "secondary" | "error" | "warning" | "info" | "success";
 }
 
 const Typography = ({
@@ -86,7 +88,11 @@ const Typography = ({
     element,
     {
       ...props,
-      className: `${className} ${props.className}`,
+      className: classNames(
+        className,
+        props.className || "",
+        props.color ? `text-${props.color}` : ""
+      ),
       style: combinedStyles,
     },
     children

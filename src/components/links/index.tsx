@@ -7,18 +7,21 @@ const list = [
     title: "Github",
     url: "https://github.com/sujitIwale",
     icon: <i className="fa-brands fa-github fa-xl"></i>,
+    color: "",
   },
   {
     id: 2,
     title: "LinkedIn",
     url: "https://linkedin.com",
     icon: <i className="fa-brands fa-linkedin fa-xl"></i>,
+    color: "#0077B5",
   },
   {
     id: 3,
     title: "Twitter",
     url: "https://twitter.com",
-    icon: <i className="fa-brands fa-twitter fa-xl"></i>,
+    icon: <i className="fa-brands fa-x-twitter fa-xl"></i>,
+    color: "",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const list = [
     url: "sujit.iwale5115@gmail.com",
     icon: <i className="fa-solid fa-envelope fa-xl"></i>,
     type: "email",
+    color: "#EA4335",
   },
 ];
 
@@ -38,6 +42,9 @@ const Links = () => {
           href={`${link.type === "email" ? "mailto:" : ""}${link.url}`}
           target="_blank"
           type="email"
+          className="text-primary"
+          style={{ color: link.color }}
+          // color={link.color}
         >
           {link.icon}
         </Link>

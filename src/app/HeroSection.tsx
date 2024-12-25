@@ -14,7 +14,7 @@ const HeroSection = () => {
       </div>
       <Typography variant="h1">Hi, I&apos;m Sujit 👋</Typography>
       <Links />
-      <Typography variant="body1">
+      <Typography variant="body1" color="secondary">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat
         facere hic nulla deleniti a culpa aliquid sint delectus voluptatibus,
         cumque exercitationem at repudiandae quidem ullam explicabo. Saepe,

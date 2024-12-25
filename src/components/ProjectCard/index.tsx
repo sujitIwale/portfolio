@@ -19,7 +19,7 @@ const ProjectCard = () => {
       <div className={styles["content"]}>
         <div className={styles.details}>
           <Typography variant="h3">Project Name</Typography>
-          <Typography variant="body2" className="text-secondary">
+          <Typography variant="body2" color="secondary">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam,
             tenetur accusantium debitis ratione molestiae nulla quia iure iste
             in sequi earum omnis deserunt, laudantium asperiores. Excepturi
