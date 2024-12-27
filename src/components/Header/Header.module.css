@@ -12,6 +12,10 @@
   z-index: 100;
 }
 
+.header a {
+  font-size: 1rem;
+}
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -39,4 +43,20 @@
 .buttons-group {
   display: flex;
   gap: 0.5rem;
+}
+
+.menu {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  z-index: 100;
+  min-width: 200px;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  border-radius: 24px;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.05),
+    0 12px 24px rgba(0, 0, 0, 0.05);
 }

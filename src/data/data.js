@@ -13,6 +13,7 @@ export const skills = [
   "Java",
   "Nodejs",
   "AWS",
+  "MongoDB",
 ];
 
 export const resumeLink =

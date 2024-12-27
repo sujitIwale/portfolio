@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { TimelineItem } from "./TimelineItem";
 import { TimelineHeader } from "./TimelineHeader";
 import { TimelineRunner } from "./TimelineRunner";
 

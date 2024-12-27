@@ -5,7 +5,7 @@ import { skills } from "@/data/data";
 const Skills = () => {
   return (
     <SectionWrapper title="Skills">
-      <div className="flex gap-1 justify-center">
+      <div className="flex gap-1 justify-center flex-wrap">
         {skills.map((skill) => (
           <Chip key={skill} label={skill} />
         ))}
