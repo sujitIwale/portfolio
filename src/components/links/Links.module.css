@@ -1,5 +1,5 @@
 .links {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 0.75rem;
 }

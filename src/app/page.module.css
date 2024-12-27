@@ -4,6 +4,7 @@
   gap: 3rem;
   max-width: var(--max-width);
   margin: var(--header-height) auto;
+  padding: 0 var(--horizontal-padding);
 }
 
 .hero-section {
@@ -60,8 +61,8 @@
 
 .action-buttons {
   display: flex;
-  gap: 16px;
-  margin-bottom: 40px;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero-right-part {
@@ -96,49 +97,4 @@
   padding: 2rem 0;
   position: relative;
   width: 100%;
-}
-
-.timeline-container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.timeline-container::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 2px;
-  background-color: var(--secondary-color);
-}
-
-.item-container {
-  display: flex;
-  position: relative;
-  text-align: right;
-}
-
-.item-container:nth-child(2n) {
-  justify-content: flex-end;
-  text-align: left;
-}
-
-.item {
-  width: 45%;
-}
-
-.item-indicator::before {
-  content: "";
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  border: 3px solid var(--secondary-color);
-  background-color: inherit;
 }

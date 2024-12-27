@@ -82,6 +82,10 @@ const Typography = ({
       element = "span";
       className = styles.span;
       break;
+    case "caption":
+      element = "span";
+      className = styles.caption;
+      break;
   }
 
   return React.createElement(

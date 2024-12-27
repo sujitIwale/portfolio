@@ -11,23 +11,6 @@ interface TimelineProps {
   children: React.ReactNode;
 }
 
-// const Timeline = ({ children }: TimelineProps) => {
-//   return (
-//     <div className="timeline-container">
-//       <div className="timeline-center-line" />
-//       {children}
-//       {/* {timelineData.map((item, index) => (
-//       <TimelineItem
-//         key={index}
-//         {...item}
-//         index={index}
-//         isLatest={index === 0}
-//       />
-//     ))} */}
-//     </div>
-//   );
-// };
-
 const Timeline = ({ children }: TimelineProps) => {
   const timelineRef = useRef<HTMLDivElement>(null);
 

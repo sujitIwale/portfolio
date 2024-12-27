@@ -1,6 +1,6 @@
 .h1 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .h2 {
@@ -36,4 +36,9 @@
 .subtitle1 {
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+
+.caption {
+  font-size: 0.75rem;
+  line-height: 1.66;
 }

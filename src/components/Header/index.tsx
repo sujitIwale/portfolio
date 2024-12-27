@@ -5,7 +5,7 @@ import ThemeSwitch from "../common/ThemeSwitch";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles["content"]}>
+      <div className={styles.content}>
         <Link href="/">
           <h1 className={styles.title}>SUJIT IWALE</h1>
         </Link>
