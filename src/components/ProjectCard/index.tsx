@@ -24,13 +24,7 @@ const ProjectCard = ({
   return (
     <div className={styles["project-card"]}>
       <div className={styles["image-container"]}>
-        <Image
-          src={image}
-          alt={title}
-          className={styles["project-image"]}
-          width={600}
-          height={400}
-        />
+        <Image src={image} alt={title} width={600} height={400} />
       </div>
       <div className={styles["content"]}>
         <div className={styles.details}>

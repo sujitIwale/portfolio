@@ -5,12 +5,12 @@
 
 .outlined {
   background-color: transparent;
-  outline: 1px solid var(--bg-color);
+  outline: 0.8px solid var(--bg-color);
   color: var(--bg-color);
 }
 
 .primary {
-  --bg-color: var(--primary-color);
+  --bg-color: var(--button-primary-bg);
   --color: var(--button-primary-text);
 }
 

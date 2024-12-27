@@ -41,12 +41,7 @@ const ExperienceSection = () => {
       </div> */}
       <Timeline>
         {experience.map((item, index) => (
-          <TimelineItem
-            key={index}
-            {...item}
-            index={index}
-            isLatest={index === 0}
-          />
+          <TimelineItem key={index} {...item} isLatest={index === 0} />
         ))}
       </Timeline>
     </section>

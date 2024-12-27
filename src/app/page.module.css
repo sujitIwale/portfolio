@@ -19,7 +19,7 @@
 .light-container {
   overflow: hidden;
   z-index: -10;
-  position: absolute;
+  /* position: absolute; */
   inset: 0;
 }
 

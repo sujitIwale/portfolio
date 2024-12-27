@@ -5,20 +5,20 @@
   max-width: 330px;
   /* width: 350px; */
   border-radius: 0.5rem;
-  background-color: var(--card-background);
+  background-color: var(--background-color);
   /* box-shadow: var(--card-box-shadow); */
   border: 1px solid var(--card-border);
 }
 
 .image-container {
-  height: 10rem;
+  height: 9rem;
   width: 100%;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
 
 .image-container img {
-  height: 10rem;
+  height: 100%;
   width: 100%;
   object-position: top;
   object-fit: cover;

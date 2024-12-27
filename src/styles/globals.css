@@ -22,7 +22,7 @@ body {
   font-family: var(--font-figtree);
 }
 
-/* body::before {
+body::before {
   --size: var(--grid-size);
   --line-color: var(--grid-line-color);
   content: "";
@@ -42,7 +42,7 @@ body {
   transform-style: flat;
   pointer-events: none;
   z-index: -1;
-} */
+}
 
 /* body::before {
   --size: var(--grid-size);
