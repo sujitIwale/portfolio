@@ -4,13 +4,29 @@ import Chip from "../common/Chip";
 import Typography from "../common/Typography";
 import Button from "../common/Button";
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  techStack: string[];
+  image: string;
+  githubLink: string;
+  liveLink: string;
+}
+
+const ProjectCard = ({
+  title,
+  description,
+  techStack,
+  image,
+  githubLink,
+  liveLink,
+}: ProjectCardProps) => {
   return (
     <div className={styles["project-card"]}>
       <div className={styles["image-container"]}>
         <Image
-          src="/sharesheet.png"
-          alt="project"
+          src={image}
+          alt={title}
           className={styles["project-image"]}
           width={600}
           height={400}
@@ -18,24 +34,33 @@ const ProjectCard = () => {
       </div>
       <div className={styles["content"]}>
         <div className={styles.details}>
-          <Typography variant="h3">Project Name</Typography>
+          <Typography variant="h3">{title}</Typography>
           <Typography variant="body2" color="secondary">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam,
-            tenetur accusantium debitis ratione molestiae nulla quia iure iste
-            in sequi earum omnis deserunt, laudantium asperiores. Excepturi
-            consectetur quo dignissimos maxime?
+            {description}
           </Typography>
           <div className={styles["tech-stack"]}>
-            <Chip label="React" />
-            <Chip label="Next.js" />
-            <Chip label="Tailwind CSS" />
+            {techStack.map((tech, i) => (
+              <Chip key={i} label={tech} />
+            ))}
           </div>
         </div>
         <div className={styles["buttons"]}>
-          <Button variant="contained" color="primary" size="small">
+          <Button
+            href={liveLink}
+            target="_blank"
+            variant="contained"
+            color="primary"
+            size="small"
+          >
             View Project
           </Button>
-          <Button variant="outlined" color="secondary" size="small">
+          <Button
+            href={githubLink}
+            target="_blank"
+            variant="outlined"
+            color="primary"
+            size="small"
+          >
             View Code
           </Button>
         </div>

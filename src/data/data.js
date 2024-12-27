@@ -1,16 +1,7 @@
-const personalData = {
+export const personalData = {
   name: "Sujit Iwale",
-  experience: [
-    {
-      companyName: "Murf Ai",
-      from: "May 2023",
-      isCurrent: true,
-      role: "Software Engineer Frontend",
-      description: "lorem",
-      skills: ["React js", "Typescript", "Java", "AWS"],
-      logo: "",
-    },
-  ],
+  about:
+    "Hi there! I'm Sujit, a software engineer with a passion for both frontend and backend development. I enjoy building responsive web pages, scalable systems, and working on personal projects in my spare time. ",
 };
 
 export const skills = [
@@ -36,7 +27,7 @@ export const experience = [
     period: "May 2023 - Present",
     location: "Bengaluru, India",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec purus nec nunc.",
+      "At Murf AI, I developed a screen for correcting translations and voiceovers in AI-dubbed videos, enhancing the workflow for seamless editing. Worked on backend tasks using Java and AWS DynamoDB to record video dubbing activities. Designed and implemented a rich text editor to improve content creation and user experience. Collaborated with cross-functional teams to plan and deliver new features, contributing to authentication, account management, and audio timeline development while ensuring high-quality results.",
   },
   {
     year: "2021",
@@ -46,7 +37,7 @@ export const experience = [
     period: "Oct 2022 - May 2023",
     location: "Remote",
     description:
-      "Developed and maintained multiple client-facing applications using React and Node.js. Reduced application load time by 60% through optimization techniques.",
+      "At Smallcase, I worked in the Foundation team, contributing to order transaction tasks across multiple codebases. Developed a nudge feature that reduced error rates by 0.7% and prevented 4,000 errors. Designed and implemented UI components to display charges in transactions, collaborating closely with backend developers and designers. Served as the release owner, managing production deployments for new features and updates.",
   },
   {
     year: "2019",
@@ -55,16 +46,46 @@ export const experience = [
     companyLogo: "/skilzen-logo.png",
     period: "Jun 2022 - Oct 2022",
     location: "Remote",
-    description: "Lorem",
+    description:
+      "I developed responsive web pages for the Career Guidance website, ensuring a seamless user experience across devices. Contributed to the migration of the codebase from JavaScript to TypeScript, improving code maintainability and scalability",
   },
 ];
 
 export const projects = [
   {
     title: "Sharesheet",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    techStack: ["React", "Node.js", "MongoDB"],
-    githubLink: "",
-    demoLink: "",
+    description:
+      "Created a web-based application to upload and edit CSV files. Added features for CSV parsing, saving data to a database, and sharing data with other users.",
+    image: "/sharesheet.png",
+    techStack: ["React.js", "Node.js", "MongoDB"],
+    githubLink: "https://github.com/sujitIwale/shareSheet",
+    liveLink: "https://sharesheet.netlify.app/landing",
+  },
+  {
+    title: "Google Calendar Clone",
+    description:
+      "Developed a Google Calendar clone web app for managing events in a monthly view. Included features for adding, editing, and deleting events.",
+    image: "/calendar.png",
+    techStack: ["React.js", "Html", "CSS"],
+    githubLink: "https://github.com/sujitIwale/google-calendar",
+    liveLink: "https://react-calendar-manager.netlify.app/",
+  },
+  {
+    title: "Kanban Board",
+    description:
+      "Built a Kanban board web app for managing tasks in a project. Implemented features for adding, editing, and deleting tasks in different columns.",
+    image: "/todo.png",
+    techStack: ["React.js", "CSS", "Drag and Drop"],
+    githubLink: "https://github.com/sujitIwale/task-manager",
+    liveLink: "https://day-manager.netlify.app/kanban",
+  },
+  {
+    title: "Pizza House",
+    description:
+      "Developed a responsive website for a pizza restaurant. Included features for viewing menu items, ordering pizza, and tracking order status.",
+    image: "/pizzahouse.png",
+    techStack: ["React", "HTML", "CSS", "Javascript"],
+    githubLink: "https://github.com/sujitIwale/pizzahouse",
+    liveLink: "https://pizzahouse.netlify.app/",
   },
 ];

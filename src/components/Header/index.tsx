@@ -11,9 +11,9 @@ const Header = () => {
         </Link>
         <nav className={styles["navbar"]}>
           <div className={styles["links-container"]}>
+            <Link href="#experience">Experience</Link>
             <Link href="#projects">Projects</Link>
-            <Link href="/">Experience</Link>
-            <Link href="/">Education</Link>
+            {/* <Link href="/">Education</Link> */}
           </div>
           <div className={styles["buttons-group"]}>
             {/* <IconButton>

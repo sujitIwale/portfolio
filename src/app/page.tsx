@@ -1,13 +1,10 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import TitleCard from "@/components/common/TitleCard";
-import ExperienceDetails from "@/components/ExperienceDetails";
 import ProjectCard from "@/components/ProjectCard";
 import HeroSection from "./HeroSection";
 import ExperienceSection from "./ExperienceSection";
 import Typography from "@/components/common/Typography";
-import projects from "@/data/projects";
 import Skills from "@/components/sections/Skills/Skills";
+import { projects } from "@/data/data";
 
 export default function Home() {
   return (
@@ -18,8 +15,8 @@ export default function Home() {
       <section className={styles["projects-section"]} id="projects">
         <Typography variant="h2">My Projects</Typography>
         <div className={styles["projects-list"]}>
-          {projects.map((project) => (
-            <ProjectCard key={project.id} />
+          {projects.map((project, ind) => (
+            <ProjectCard key={ind} {...project} />
           ))}
         </div>
       </section>

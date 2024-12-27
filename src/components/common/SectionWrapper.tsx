@@ -9,7 +9,11 @@ interface SectionWrapperProps {
 const SectionWrapper = ({ children, title }: SectionWrapperProps) => {
   return (
     <section className="flex flex-column gap-1">
-      {title ? <Typography variant="h3">{title}</Typography> : null}
+      {title ? (
+        <Typography variant="h3" className="text-center">
+          {title}
+        </Typography>
+      ) : null}
       {children}
     </section>
   );

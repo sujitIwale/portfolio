@@ -5,7 +5,7 @@
 
 .outlined {
   background-color: transparent;
-  border: 1px solid var(--bg-color);
+  outline: 1px solid var(--bg-color);
   color: var(--bg-color);
 }
 

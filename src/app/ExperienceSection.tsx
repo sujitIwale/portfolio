@@ -6,7 +6,7 @@ import { TimelineItem } from "@/components/timeline/TimelineItem";
 
 const ExperienceSection = () => {
   return (
-    <section className={styles["experience-section"]}>
+    <section className={styles["experience-section"]} id="experience">
       {/* <div className={styles["timeline-container"]}>
         <div className={styles["item-container"]}>
           <div className={styles["item-indicator"]}></div>

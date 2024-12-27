@@ -2,7 +2,7 @@ import Typography from "@/components/common/Typography";
 import styles from "./page.module.css";
 import Button from "@/components/common/Button";
 import Links from "@/components/links";
-import { resumeLink } from "@/data/data";
+import { personalData, resumeLink } from "@/data/data";
 
 const HeroSection = () => {
   return (
@@ -15,10 +15,7 @@ const HeroSection = () => {
       <Typography variant="h1">Hi, I&apos;m Sujit 👋</Typography>
       <Links />
       <Typography variant="body1" color="secondary">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat
-        facere hic nulla deleniti a culpa aliquid sint delectus voluptatibus,
-        cumque exercitationem at repudiandae quidem ullam explicabo. Saepe,
-        cupiditate ullam.
+        {personalData.about}
       </Typography>
       <div className={styles["action-buttons"]}>
         <Button

@@ -12,14 +12,14 @@ const list = [
   {
     id: 2,
     title: "LinkedIn",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/sujitIwale",
     icon: <i className="fa-brands fa-linkedin fa-xl"></i>,
     color: "#0077B5",
   },
   {
     id: 3,
     title: "Twitter",
-    url: "https://twitter.com",
+    url: "https://x.com/SujitIwale",
     icon: <i className="fa-brands fa-x-twitter fa-xl"></i>,
     color: "",
   },
@@ -44,7 +44,6 @@ const Links = () => {
           type="email"
           className="text-primary"
           style={{ color: link.color }}
-          // color={link.color}
         >
           {link.icon}
         </Link>

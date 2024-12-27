@@ -68,7 +68,9 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
               </div>
             </div>
           </div>
-          <p className="timeline-description">{description}</p>
+          <Typography variant="body1" color="secondary">
+            {description}
+          </Typography>
         </div>
       </div>
     </div>
