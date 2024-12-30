@@ -85,10 +85,18 @@
 .projects-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
   gap: 1rem;
 }
 
 .experience-section {
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
 }

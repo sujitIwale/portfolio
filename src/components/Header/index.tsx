@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={styles.header} id="header">
         <div className={styles.content}>
           <Link href="/">
             <h1 className={styles.title}>SUJIT IWALE</h1>
