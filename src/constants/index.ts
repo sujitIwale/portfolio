@@ -1,1 +1,1 @@
-export const BASE_URL = "https://portfolio-tau-sooty-61.vercel.app";
+export const BASE_URL = "https://www.sujitiwale.info";

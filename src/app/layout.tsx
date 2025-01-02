@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import "../styles/globals.css";
 import "../styles/common.css";
 import { BASE_URL } from "@/constants";
+import MixpanelProvider from "@/providers/MixpanelProvider";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -17,11 +18,13 @@ export const metadata: Metadata = {
     default: "Sujit Iwale",
     template: "%s | Sujit Iwale",
   },
-  description: "Software Engineer Frontend",
+  description:
+    "Full-Stack Web Developer skilled in React, Next.js , Nodejs , Java , MongoDB",
   metadataBase: new URL(BASE_URL),
   openGraph: {
     title: "Sujit Iwale",
-    description: "Software Engineer Frontend",
+    description:
+      "Full-Stack Web Developer skilled in React, Next.js , Nodejs , Java , MongoDB",
     url: BASE_URL,
     siteName: "Sujit Iwale",
     locale: "en_US",
@@ -59,11 +62,13 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <link rel="canonical" href={BASE_URL} />
       </head>
       <body className={figtree.className}>
         <Header />
         {children}
         <Analytics />
+        <MixpanelProvider />
       </body>
     </html>
   );

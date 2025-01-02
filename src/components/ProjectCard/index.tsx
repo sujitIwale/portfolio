@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./ProjectCard.module.css";
 import Chip from "../common/Chip";
 import Typography from "../common/Typography";
 import Button from "../common/Button";
+import { trackMixpanel } from "@/lib/analytics";
 
 interface ProjectCardProps {
   title: string;
@@ -45,6 +48,11 @@ const ProjectCard = ({
             variant="contained"
             color="primary"
             size="small"
+            onClick={() =>
+              trackMixpanel("View Project", {
+                project: title,
+              })
+            }
           >
             View Project
           </Button>
@@ -54,6 +62,11 @@ const ProjectCard = ({
             variant="outlined"
             color="primary"
             size="small"
+            onClick={() =>
+              trackMixpanel("View Code", {
+                project: title,
+              })
+            }
           >
             View Code
           </Button>

@@ -1,8 +1,11 @@
+"use client";
+
 import Typography from "@/components/common/Typography";
 import styles from "./page.module.css";
 import Button from "@/components/common/Button";
 import Links from "@/components/links";
 import { personalData, resumeLink } from "@/data/data";
+import { trackMixpanel } from "@/lib/analytics";
 
 const HeroSection = () => {
   return (
@@ -24,10 +27,18 @@ const HeroSection = () => {
           size="medium"
           href={resumeLink}
           target="_blank"
+          onClick={() => {
+            trackMixpanel("View Resume");
+          }}
         >
           View Resume
         </Button>
-        <Button variant="outlined" color="primary" size="medium">
+        <Button
+          onClick={() => trackMixpanel("View Blog")}
+          variant="outlined"
+          color="primary"
+          size="medium"
+        >
           View Blog
         </Button>
       </div>

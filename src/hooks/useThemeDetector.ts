@@ -5,8 +5,6 @@ const getMedia = (theme: string) => window.matchMedia(theme);
 const useThemeDetector = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  console.log({ isDarkTheme });
-
   const themeChangeLister = (e: MediaQueryListEvent) => {
     setIsDarkTheme(e.matches);
   };
