@@ -3,11 +3,8 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
 import ThemeSwitch from "../common/ThemeSwitch";
-import useDevice from "@/hooks/useDevice";
 
 const Header = () => {
-  const device = useDevice();
-
   return (
     <>
       <header className={styles.header} id="header">
@@ -33,18 +30,6 @@ const Header = () => {
           </nav>
         </div>
       </header>
-
-      {device === "mobile" ? (
-        <nav className={styles["menu"]}>
-          <div className={styles["links-container"]}>
-            <Link href="#experience">Experience</Link>
-            <Link href="#projects">Projects</Link>
-          </div>
-          <div className={styles["buttons-group"]}>
-            <ThemeSwitch />
-          </div>
-        </nav>
-      ) : null}
     </>
   );
 };
