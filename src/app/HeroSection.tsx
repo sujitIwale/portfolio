@@ -6,8 +6,11 @@ import Button from "@/components/common/Button";
 import Links from "@/components/links";
 import { personalData, resumeLink } from "@/data/data";
 import { trackMixpanel } from "@/lib/analytics";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <section className={styles["hero-section"]}>
       <div className={styles["light-container"]}>
@@ -34,7 +37,10 @@ const HeroSection = () => {
           View Resume
         </Button>
         <Button
-          onClick={() => trackMixpanel("View Blog")}
+          onClick={() => {
+            router.push("/blogs");
+            trackMixpanel("View Blog");
+          }}
           variant="outlined"
           color="primary"
           size="medium"
